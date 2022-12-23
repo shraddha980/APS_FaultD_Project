@@ -5,9 +5,9 @@ import json
 # Provide the mongodb localhost url to connect python to mongodb.
 client = pymongo.MongoClient("mongodb://localhost:27017/neurolabDB")
 
-DATA_FILE_PATH = "/config/workspace/aps_failure_training_set1.csv"
-DATABASE_NAME = "shraddha_data_aps"
-COLLECTION_NAME = "shraddha_collection_sensor"
+DATA_FILE_PATH = "/config/workspace/marketing_campaign.csv"
+DATABASE_NAME = "shraddha_data_cust"
+COLLECTION_NAME = "shraddha_collection_cust"
 
 if __name__=="__main__":
     df=pd.read_csv(DATA_FILE_PATH)
